@@ -17,7 +17,7 @@ body {
     background: #1F2937;
     color: #FFFFFF;
     
-    font-size: 3vh;
+    font-size: 3vmin;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* border: 10vh 0; */
 }
@@ -44,7 +44,7 @@ h2 {
 button {
     margin: 12vh 0 0;
     color: white;
-    font-size: 3vh;
+    font-size: 3vmin;
     background-color: #10B981;
     border: 0;
     border-radius: 6px;
