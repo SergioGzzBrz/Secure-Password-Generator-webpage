@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <h1>Generate a <br/><span class="green-highlight">random password</span></h1>
+            <h2>Never use an insecure password again</h2>
+            
+            <button onclick="generatePasswords()">Generate passwords</button>
+            
+            <div class="options flex" id="options-div">
+                <span id="toggle-hide-el" onclick="moveOptions()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16" id="toggle-hide-icon">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                    </svg>   
+                    Options
+                </span>
+                <!-- <br> -->
+                <!-- Make configuration in other place? -->
+                <label for="number-checkbox-el" class="option-el">
+                    - Include numbers?
+                    <input type="checkbox" name="number-checkbox-el" id="number-checkbox-el" checked="checked">
+                </label>        
+                <!-- <br> -->
+                
+                <label for="symbol-checkbox-el" class="option-el">
+                    - Include symbols?
+                    <input type="checkbox" name="symbol-checkbox-el" id="symbol-checkbox-el" checked="checked">
+                </label>
+                <!-- <br> -->
+                
+                <label for="password-length-el" class="option-el">
+                    - Password length:
+                    <input type="number" name="password-length-el" id="password-length-el" value="15">
+                </label>
+                <!-- <br> -->
+            </div>
+
+            <div class="line"></div>
+            
+            <!-- Create animation + copy password -->
+            <div class="password-fields flex" id="password-fields-el">
+                <p class="generated-password-el" id="password-box-el-1"> 
+                    Password 1
+                </p>
+                <p class="generated-password-el" id="password-box-el-2">
+                    Password 2
+                </p>
+            </div>
+            
+            <script src="index.js"></script>
+        </main>
+    </body>
+</html>
