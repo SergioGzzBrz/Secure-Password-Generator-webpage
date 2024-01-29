@@ -140,16 +140,16 @@ div {
 }
 
 input[type="checkbox"] {
-    height: 2vmin;
-    width: 2vmin;
+    height: 2.7vmin;
+    width: 2.7vmin;
     accent-color: #4ADF86;
 }
 
 
 input[type="number"] {
-    height: 3vh;
-    width: 4vw;
-    font-size: 2vmin;
+    height: 3vmin;
+    width: 7vw;
+    font-size: 2.7vmin;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
