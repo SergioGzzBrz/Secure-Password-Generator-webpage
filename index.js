@@ -25,7 +25,6 @@ let passwordLengthEl = document.getElementById("password-length-el")
 
 let button = document.querySelector("button")
 
-// let passwordFieldsEl = document.querySelector("#password-fields-el")
 let optionsDiv = document.querySelector("#options-div")
 let OptionsDivStartingHeight = optionsDiv.getBoundingClientRect().height
 optionsDiv.style.height = OptionsDivStartingHeight
@@ -95,7 +94,6 @@ function moveOptions() {
     
     if (!areOptionsHidden){
         for (let i = 0; i < optionElements.length; i++) {
-            // console.log()
             optionElements[i].style.transform = "translateY(-" + optionElTranslationDistance[i] + "px)"
             optionElements[i].style.opacity = "0"
         }
@@ -111,5 +109,4 @@ function moveOptions() {
         optionsDiv.style.height = OptionsDivStartingHeight
         toggleHideIcon.style.transform = "rotate(0deg)"
     }
-    console.log("now dis")
 }
