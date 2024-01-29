@@ -49,6 +49,15 @@ function isChecked() {
 
 function generatePasswords() {
     let passwordLength = Number(passwordLengthEl.value)
+    if (passwordLength < 1 || passwordLength > 100) {
+        passwordBoxes.forEach(box => {
+            box.textContent = ""
+        })
+        passwordBoxes[0].style.color = "red"
+        passwordBoxes[0].textContent = "Please insert a value that is between 1 and 100"
+        return
+    }
+
     let selectedCharacters = [...characters];
     
     if (symbolCheckboxEl.checked) {
@@ -63,6 +72,7 @@ function generatePasswords() {
         for (let i = 0; i < passwordLength; i++) {
             password += selectedCharacters[generateIndex(selectedCharacters.length)]
         }
+        box.style.color = "white"
         box.textContent = password
     })
 }
